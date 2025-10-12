@@ -1,0 +1,99 @@
+/* Basic Reset and Body Styles */
+/* Basic Reset and Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+/* Calculator Container */
+.calculator {
+    width: 300px;
+    background-color: #3a4750;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Container for both the operator and the input field */
+.display-container {
+    display: flex; 
+    align-items: center; 
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 5px 10px;
+    min-height: 70px; /* Ensure a minimum height */
+}
+
+/* Operator Symbol Display */
+#operator-display {
+    font-size: 1.8em;
+    color: #ff9500; 
+    margin-right: 10px;
+    min-width: 25px; 
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Main Display Screen */
+#display {
+    flex-grow: 1; /* <-- CRUCIAL: Ensures input takes up remaining space */
+    height: 60px;
+    background-color: transparent; 
+    border: none;
+    padding: 0;
+    text-align: right;
+    font-size: 2.5em;
+    color: #333;
+    box-sizing: border-box; 
+    min-width: 0; /* Prevents flex-item overflow */
+}
+
+/* Button Grid System */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px;
+}
+
+/* Button Styles */
+.buttons button {
+    padding: 20px 0;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+/* Number Buttons */
+.number {
+    background-color: #4a5965;
+    color: white;
+}
+.number:hover {
+    background-color: #5d6f7f;
+}
+
+/* Operator Buttons */
+.operator {
+    background-color: #ff9500;
+    color: white;
+    font-weight: bold;
+}
+
+/* Specific button styles for AC/DEL/Equals */
+[data-action="calculate"] {
+    background-color: #007bff; 
+}
+[data-action="clear"], [data-action="delete"] {
+    background-color: #6d7b86;
+}
+.operator:hover {
+    filter: brightness(1.1); 
+}

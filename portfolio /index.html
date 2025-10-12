@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K Vijay | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="container">
+      <h1 class="logo">VJ</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#artworks">Artworks</a></li>
+          <li><a href="#contact-section">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h2>K VIJAY</h2>
+      <p>Hi, I’m a Computer Science student, Web Developer, and Artist.  
+      I create elegant, responsive web designs and expressive artworks.</p>
+      <a href="#contact" class="btn">Hire Me</a>
+    </div>
+    <div class="hero-image">
+      <img src="vj1.jpg" alt="Vijay Photo">
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="about">
+    <div class="about-image">
+      <img src="vj2.jpg" alt="Vijay Photo">
+    </div>
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>I’m K Vijay, a passionate Web Developer and Artist. I blend design and technology to craft user-friendly and creative experiences. I specialize in HTML, CSS, and JavaScript, and I love combining my coding knowledge with art to build stunning visuals on the web.</p>
+      <a href="resume.pdf" download class="btn">Download Resume</a>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section id="skills" class="skills">
+    <h2>My Skills</h2>
+    <div class="skill-grid">
+      <div class="skill-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML Logo">
+        <h3>HTML</h3>
+        <p>Structure and organize web content using semantic markup.</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS Logo">
+        <h3>CSS</h3>
+        <p>Style, animate, and build responsive futuristic web layouts.</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript Logo">
+        <h3>JavaScript</h3>
+        <p>Bring web pages to life with interactivity and animations.</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python Logo">
+        <h3>Python</h3>
+        <p>Write efficient backend logic and simple automation scripts.</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="Figma Logo">
+        <h3>Figma</h3>
+        <p>Design creative UI/UX prototypes with precision and balance.</p>
+      </div>
+      <div class="skill-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111288.png" alt="Git Logo">
+        <h3>Git & GitHub</h3>
+        <p>Collaborate and manage code efficiently using version control.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <img src="pj3.webp" alt="Project 1">
+        <h3>Portfolio Website</h3>
+        <p>A responsive personal portfolio built using HTML, CSS, and JavaScript to showcase my work and skills.</p>
+      </div>
+      <div class="project-card">
+        <img src="pj2.webp" alt="Project 2">
+        <h3>Art Gallery Page</h3>
+        <p>A creative online gallery displaying my portrait, sketch, and mandala artworks with smooth transitions.</p>
+      </div>
+      <div class="project-card">
+        <img src="pj1.webp" alt="Project 3">
+        <h3>E-commerce Website</h3>
+        <p>Full-stack e-commerce solution with modern design and seamless user experience.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ARTWORKS SECTION ===== -->
+  <section id="artworks" class="artworks">
+    <h2>My Artworks</h2>
+    <div class="art-grid">
+      <!-- First 4 visible artworks -->
+      <div class="art-card">
+        <img src="art1.jpg" alt="Portrait Art">
+        <div class="art-info">Portrait Art</div>
+      </div>
+      <div class="art-card">
+        <img src="art2.jpg" alt="Sketch Work">
+        <div class="art-info">Sketch Work</div>
+      </div>
+      <div class="art-card">
+        <img src="art3.jpg" alt="Mandala Art">
+        <div class="art-info">Illustration</div>
+      </div>
+      <div class="art-card">
+        <img src="art4.jpg" alt="Digital Art">
+        <div class="art-info">Colour Sketch</div>
+      </div>
+    </div>
+
+    <!-- Hidden artworks -->
+    <input type="checkbox" id="view-more">
+    <div class="more-art art-grid">
+      <div class="art-card">
+        <img src="art5.jpg" alt="Painting">
+        <div class="art-info">Color Painting</div>
+      </div>
+      <div class="art-card">
+        <img src="art6.jpg" alt="Drawing">
+        <div class="art-info">Colour Sketch</div>
+      </div>
+      <div class="art-card">
+        <img src="art7.jpg" alt="Charcoal Art">
+        <div class="art-info">Line art</div>
+      </div>
+      <div class="art-card">
+        <img src="art9.jpg">
+        <div class="art-info">Portrait Art</div>
+      </div>
+      <div class="art-card">
+        <img src="art8.jpg" alt="Realism Art">
+        <div class="art-info">Realism Portrait</div>
+      </div>
+      <div class="art-card">
+        <img src="art10.jpg" alt="Creative Art">
+        <div class="art-info">Creative Concept Art</div>
+      </div>
+    </div>
+
+    <label for="view-more" class="view-btn">View More</label>
+  </section>
+
+<!-- ===== CONTACT SECTION ===== -->
+<section class="contact-section">
+  <div class="contact-container">
+    
+    <!-- Left Side -->
+    <div class="contact-info">
+      <h2>Get in touch</h2>
+      <p>Have a project idea or just want to say hi? I'm always open to discussing creative work or collaboration opportunities.</p>
+
+      <div class="info-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <span class="hi">5-119 Nethaji road, Kuppam, Chittoor, Andhra Pradesh</span>
+      </div>
+
+      <div class="info-item">
+        <i class="fas fa-envelope"></i>
+        <span class="hi">kumarvijay007001@gmail.com</span>
+      </div>
+
+      <div class="info-item">
+        <i class="fas fa-phone"></i>
+        <span class="hi">+91 799 529 3384</span>
+      </div>
+
+      <!-- Social Media Icons -->
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://wa.me/yourphonenumber" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+    <!-- Right Side -->
+    <div class="contact-form">
+      <h2>Contact me</h2>
+      <form action="#" method="post">
+        <div class="form-row">
+          <input type="text" placeholder="First Name" required>
+          <input type="text" placeholder="Last Name" required>
+        </div>
+        <div class="form-row">
+          <input type="text" placeholder="Phone" required>
+          <input type="email" placeholder="Email" required>
+        </div>
+        <textarea placeholder="Message" rows="5" required></textarea>
+        <button type="submit" class="send-btn">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 K Vijay | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
