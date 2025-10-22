@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chrono-X Smartwatch</title>
+  <link rel="stylesheet" href="style.css" title="" type="" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">Chrono<span>X</span></div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#features">Features</a>
+      <a href="#tech">Tech</a>
+      <a href="#preorder">Pre-Order</a>
+    </div>
+    <button class="cta-btn">Reserve Now</button>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="glow-circle"></div>
+    <h1>Chrono-X Smartwatch</h1>
+    <p>Experience the future on your wrist.</p>
+    <button class="cta-btn">Reserve Your Future Now</button>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="features">
+    <div class="feature-card">
+      <h3 style="color:#00D9FF;">Quantum Health Monitoring</h3>
+      <p>Track your body's quantum state in real-time with Predictive Stress Index and Cellular Vitality Score for predictive health insights.</p>
+    </div>
+    <div class="feature-card">
+      <h3 style="color:#00FF88;">Adaptive AI Companion</h3>
+      <p>Experience an intelligent companion that learns, anticipates your needs, and evolves with you — beyond just commands.</p>
+    </div>
+    <div class="feature-card">
+      <h3 style="color:#A64DFF;">Holo-Display Interface</h3>
+      <p>Interact with a floating holographic projection system above your wrist, transforming how you engage with technology.</p>
+    </div>
+  </section>
+
+  <!-- Technical Specs -->
+  <section id="tech" class="tech-specs">
+    <h2>Technical Specifications</h2>
+    <div class="spec-grid">
+      <div class="spec-item"><h4>Quantum Processor</h4><p>NeuralCore X1</p></div>
+      <div class="spec-item"><h4>Battery Life</h4><p>14 Days Adaptive</p></div>
+      <div class="spec-item"><h4>Display</h4><p>Holo-AMOLED 360°</p></div>
+      <div class="spec-item"><h4>Water Resistance</h4><p>100M Pressure Sealed</p></div>
+      <div class="spec-item"><h4>Connectivity</h4><p>Neural-Link 6G</p></div>
+      <div class="spec-item"><h4>Materials</h4><p>Titanium Carbon Weave</p></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Chrono-X Technologies. All Rights Reserved.</p>
+    <p>Follow us on <a href="#">Twitter</a> • <a href="#">Instagram</a> • <a href="#">YouTube</a></p>
+  </footer>
+
+  <!-- Scroll Animation Script -->
+  <script>
+    const revealElements = document.querySelectorAll('.feature-card, .spec-item');
+    const revealOnScroll = () => {
+      const triggerBottom = window.innerHeight * 0.85;
+      revealElements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < triggerBottom) {
+          el.classList.add('visible');
+        }
+      });
+    };
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
+  </script>
+
+</body>
+</html>
